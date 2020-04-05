@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera página</title>
+
+    <style type="text/css">
+        Body {
+            color: black;
+        }
+    </style>
+
+    <script>
+        function mayuscularizador() {
+            const text=document.getElementById("myText");
+            text.value = text.value.toUpperCase();
+        }
+    </script>
+</head>
+<body>
+    <p>Aquí tenemos una nueva herramienta.</p>
+    <p>Permite cambiar a mayúsculas tu texto.</p>
+    <p>El mayuscularizador!: <input type="text" id="myText" onChange="mayuscularizador()"></p>
+
+    Creado en Medellin, <br>Antioquia,&nbsp;&nbsp;&nbsp;&nbsp;Colombia.
+
+    <h1>Colombia</h1>
+    <h2>Antioquia</h2>
+    <h3>Medellín</h3>
+
+    <p>
+        Puedes hacer tus pedidos <strong>aquí!</strong><br>
+        O al teléfono <em>567 89 00</em><br>
+        <u>Antes</u> de las 3pm<br>
+        Llámanos! <strike>O mejor no</strike><br>
+        <strong><u>Cerrado por incentario</u></strong> <br>
+        <strong>Cerrado por <mark>inventario</mark> </strong> <br>
+        <b><i>este texto aparecerá en negrita y cursiva</i></b>
+        <strong> <sub>CERRADO</sub> <small> POR </small> <mark>INVENTARIO</mark> </strong> 
+
+    </p>
+
+    <h3>Otros productos:</h3>
+
+    <ul>
+        <li>Minusculizador</li>
+        <li>Sumarizador</li>
+        <li>Multiplicador</li>
+    </ul>
+
+    <h3>Cómo pedir domicilios:</h3>
+
+    <ol start="5" reversed>
+        <li>Tome el teléfono</li>
+        <li>Marque nuestro número</li>
+        <li>Solicite sus productos</li>
+    </ol>
+
+    <img src="kimi.jpg" alt="Foto de Kimi" width="250" height="250">
+    <img src="tommy.jpg" alt="Foto de Tommy" width="250" height="250">
+    <img src="https://66.media.tumblr.com/tumblr_m0hyyznkYd1qkwp0io1_400.jpg" alt="Foto de Carlitos" width="250" height="250">
+    
+    <video width="300" controls>
+        <source src="LP.mp4" type="video/mp4">
+        Tu navegador no puede reproducir este video
+    </video>
+
+    <iframe width="420" height="315" src="https://www.youtube.com/watch?v=duJKvDndclQ"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=duJKvDndclQ"  allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/duJKvDndclQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OVj0hF5jTEs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>
