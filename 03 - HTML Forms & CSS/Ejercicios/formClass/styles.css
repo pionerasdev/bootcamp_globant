@@ -1,5 +1,10 @@
 .form_container {
-
+    font-family: Calibri;
+    font-size: 14px;
+    font-weight: bold;
+    width: 260px;
+    height: 380px;
+    border: 1px solid rebeccapurple;
 }
 
 label, p {
@@ -7,7 +12,7 @@ label, p {
 }
 
 div {
-
+    margin: 8px;
 }
 
 h1 {
