@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+</head>
+
+<body>
+
+  <article>
+    <div>
+      1
+    </div>
+
+    <div>
+      2
+    </div>
+
+    <div>
+      3
+    </div>
+
+    <div>
+      4
+    </div>
+
+    <div>
+      5
+    </div>
+
+    <div>
+      6
+    </div>
+
+    <div>
+      7
+    </div>
+
+    <div>
+      8
+    </div>
+  </article>
+
+  <style>
+    :root {
+      --size: 400px;
+    }
+
+    article {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      align-content: flex-start;
+    }
+
+    div {
+      width: var(--size);
+      height: var(--size);
+      color: white;
+      text-align: center;
+      font-size: 20px;
+      line-height: var(--size);
+    }
+
+    div:nth-child(1) {
+      background: #C0BDA5;
+    }
+
+    div:nth-child(2) {
+      background: #CC978E;
+    }
+
+    div:nth-child(3) {
+      background: #F39C6B;
+    }
+
+    div:nth-child(4) {
+      background: #FF3864;
+    }
+
+    div:nth-child(5) {
+      background: #261447;
+    }
+
+    div:nth-child(6) {
+      background: #191923;
+    }
+
+    div:nth-child(7) {
+      background: #0E79B2;
+    }
+
+    div:nth-child(8) {
+      background: #7D7461;
+    }
+  </style>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="form_container">
+      <h1>Formulario</h1>
+      <form action="#" method="GET">
+        <div>
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" />
+        </div>
+        <div>
+          <label for="lastname">Apellido:</label>
+          <input type="text" id="lastname" name="lastname" />
+        </div>
+        <div>
+          <p>Género:</p>
+          <input type="radio" name="gender" value="female" id="female" />
+          <label for="female">Femenino</label>
+          <br />
+          <input type="radio" name="gender" value="male" id="male" />
+          <label for="male">Masculino</label>
+        </div>
+        <div>
+          <p>Áreas de Interes:</p>
+          <input
+            type="checkbox"
+            name="interest"
+            id="data_science"
+            value="data_science"
+          />
+          <label for="data_science">Ciencia de datos</label>
+          <br />
+          <input type="checkbox" name="interest" id="math" value="math" />
+          <label for="math">Matemáticas Puras</label>
+          <br />
+          <input type="checkbox" name="interest" id="logic" value="logic" />
+          <label for="logic">Lógica Matemática</label>
+        </div>
+        <div>
+          <label for="user_reason"
+            >Por qué estás interesado en aplicar a la beca?</label
+          >
+          <br />
+          <textarea
+            name="user_reason"
+            id="user_reason"
+            cols="27"
+            rows="5"
+            placeholder="Escribe acá tus razones..."
+          ></textarea>
+        </div>
+        <div>
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

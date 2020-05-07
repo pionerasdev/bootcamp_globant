@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive CSS</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+</head>
+
+<body>
+
+  <article>
+    <div>
+      1
+    </div>
+
+    <div>
+      2
+    </div>
+
+    <div>
+      3
+    </div>
+
+    <div>
+      4
+    </div>
+  </article>
+
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    article {
+      padding: 0;
+      margin: 0;
+      white-space: normal;
+    }
+
+    div {
+      width: 100px;
+      height: 100px;
+      float: left;
+      background: black;
+      color: white;
+      font-size: 20px;
+      line-height: 100px;
+      border: 3px solid grey;
+      margin: 10px;
+      text-align: center;
+    }
+
+    @media (max-width: 1200px) {
+      div {
+        background: rgb(200, 100, 100);
+      }
+    }
+
+    @media (max-width: 800px) {
+      div {
+        background: rgb(100, 200, 100);
+      }
+    }
+
+    @media (max-width: 1000px) and (min-width: 800px) {
+      div {
+        background: rgb(100, 100, 200);
+      }
+    }
+  </style>
+
+</body>
+
+</html>

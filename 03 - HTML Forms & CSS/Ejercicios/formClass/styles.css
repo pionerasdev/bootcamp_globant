@@ -1,0 +1,21 @@
+.form_container {
+  font-family: Calibri;
+  font-size: 14px;
+  font-weight: bold;
+  width: 260px;
+  height: 500px;
+  border: 1px solid rebeccapurple;
+}
+
+label,
+p {
+}
+
+div {
+  margin: 8px;
+}
+
+h1 {
+  text-align: center;
+  text-shadow: 1px -2px 0 pink;
+}

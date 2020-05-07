@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Wrapping</title>
+</head>
+
+<body>
+
+  <h1>Text Wrapping</h1>
+
+  <div class="white-space-normal">
+    <h3>normal</h3>
+    <span>
+      Este es    un texto muy  largo que
+  está escrito       en múltiples líneas 
+   con espacios    muy amplios entre algunas palabras, y a veces
+            se ve muy extraño, pero sirve para    ilustrar cómo funciona la propiedad    
+      de white-space de CSS y sus                     diferentes valores.
+  ¿Qué        les parece?
+    </span>
+  </div>
+
+  <div class="white-space-nowrap">
+    <h3>nowrap</h3>
+    <span>
+      Este es    un texto muy  largo que
+  está escrito       en múltiples líneas 
+   con espacios    muy amplios entre algunas palabras, y a veces
+            se ve muy extraño, pero sirve para    ilustrar cómo funciona la propiedad    
+      de white-space de CSS y sus                     diferentes valores.
+  ¿Qué        les parece?
+    </span>
+  </div>
+
+  <div class="white-space-pre">
+    <h3>pre</h3>
+    <span>
+      Este es    un texto muy  largo que
+  está escrito       en múltiples líneas 
+   con espacios    muy amplios entre algunas palabras, y a veces
+            se ve muy extraño, pero sirve para    ilustrar cómo funciona la propiedad    
+      de white-space de CSS y sus                     diferentes valores.
+  ¿Qué        les parece?
+    </span>
+  </div>
+
+  <div class="white-space-pre-line">
+    <h3>pre-line</h3>
+    <span>
+      Este es    un texto muy  largo que
+  está escrito       en múltiples líneas 
+   con espacios    muy amplios entre algunas palabras, y a veces
+            se ve muy extraño, pero sirve para    ilustrar cómo funciona la propiedad    
+      de white-space de CSS y sus                     diferentes valores.
+  ¿Qué        les parece?
+    </span>
+  </div>
+
+  <div class="white-space-pre-wrap">
+    <h3>pre-wrap</h3>
+    <span>
+      Este es    un texto muy  largo que
+  está escrito       en múltiples líneas 
+   con espacios    muy amplios entre algunas palabras, y a veces
+            se ve muy extraño, pero sirve para    ilustrar cómo funciona la propiedad    
+      de white-space de CSS y sus                     diferentes valores.
+  ¿Qué        les parece?
+    </span>
+  </div>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 25px 50px;    
+    }
+
+    div {
+      display: block;
+      padding: 0;
+      margin: 0 0 25px;
+      width: 150px;
+    }
+
+    div h3 {
+      margin: 0 0 5px 0;
+    }
+
+    .white-space-normal span {
+      white-space: normal;
+    }
+
+    .white-space-nowrap span {
+      white-space: nowrap;
+    }
+
+    .white-space-pre span {
+      white-space: pre;
+    }
+
+    .white-space-pre-line span {
+      white-space: pre-line;
+    }
+
+    .white-space-pre-wrap span {
+      white-space: pre-wrap;
+    }
+  </style>
+
+</body>
+
+</html>

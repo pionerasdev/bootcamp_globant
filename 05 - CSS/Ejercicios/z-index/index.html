@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>z-index</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+</head>
+
+<body>
+
+  <div class="back">
+    z-index: 0
+  </div>
+
+  <div class="middle-back">
+    z-index: 1
+  </div>
+
+  <div class="middle">
+    z-index: 20
+  </div>
+
+  <div class="middle-front">
+    z-index: 100
+  </div>
+
+  <div class="front">
+    z-index: 9999
+  </div>
+
+  <style>
+    body {
+      padding: 0;
+      margin: 100px;
+      position: relative;
+    }
+
+    div {
+      position: absolute;
+      padding: 40px 100px;
+      font-size: 30px;
+      width: 200px;
+      color: white;
+      text-align: center;
+    }
+
+    .back {
+      z-index: 0;
+      background: rgb(0, 0, 0);
+      top: -10px;
+      left: -15px;
+    }
+
+    .middle-back {
+      z-index: 1;
+      background: rgb(50, 0, 100);
+      top: 25px;
+      left: 320px;
+    }
+
+    .middle {
+      z-index: 20;
+      background: rgb(150, 50, 100);
+      top: 75px;
+      left: 0;
+    }
+
+    .middle-front {
+      z-index: 100;
+      background: rgb(250, 50, 150);
+      top: 100px;
+      left: 350px;
+    }
+
+    .front {
+      z-index: 9999;
+      background: rgb(250, 150, 200);
+      top: 180px;
+      left: 200px;
+    }
+  </style>
+
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positioning</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+</head>
+
+<body>
+
+  <article>
+    <div class="static">
+      Position: static
+    </div>
+
+    <div class="relative">
+      Position: relative
+    </div>
+
+    <div class="fixed">
+      Position: fixed
+    </div>
+
+    <div class="absolute">
+      Position: absolute
+    </div>
+  </article>
+
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    article {
+      margin: 1000px 0;
+      padding: 100px 250px 0 0;
+      position: relative;
+    }
+
+    article div {
+      color: lavender;
+      background: teal;
+      font-size: 12px;
+      width: 150px;
+      padding: 50px 150px;
+      text-align: center;
+      margin: 100px;
+      border: 10px solid darkgray;
+    }
+
+    article div.static {
+      position: static;
+    }
+
+    article div.relative {
+      position: relative;
+      left: 50px;
+    }
+
+    article div.fixed {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+    }
+
+    article div.absolute {
+      position: absolute;
+      top: 50px;
+      right: 25px;
+    }
+  </style>
+
+</body>
+
+</html>
