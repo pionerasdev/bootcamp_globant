@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Await</title>
+</head>
+<body>
+    <script>
+
+        function orderPizza(flavor) {
+            return new Promise(function(resolve, reject) {
+            // Rechazar si la pizza es de huevo
+            if(flavor == 'egg') {
+                reject('Pedido rechazado :(');
+            }
+
+            // Esperar a que la pizza salga del horno
+            setTimeout(function(){
+                // Cuando esté lista la pizza, resolver la promesa.
+                resolve(`Aquí tienes tu pizza de ${flavor}! 🍕`);
+            }, 1000);
+
+            });
+        }
+
+        async function makeOrder() {
+            const pizza = await orderPizza('margarita');
+            console.log(pizza);
+        }
+
+        makeOrder();
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Promises</title>
+  <!-- <link rel="stylesheet" href="../base.css"> -->
+</head>
+
+<body>
+
+  <script>
+    function orderPizza(flavor) {
+      const pizzaPromise = new Promise(function(resolve, reject){
+
+        // Pizza al horno!
+        setTimeout(function(){
+          // Cuando esté lsta la pizza, resolver la promesa.
+          resolve(`Aquí tienes tu pizza de ${flavor} 🍕`);
+
+        }, 1000);
+        // Si pasa algo con el pedido, rechazar la promera.
+      });
+      return pizzaPromise;
+    }
+    
+  </script>
+</body>
+
+</html>
