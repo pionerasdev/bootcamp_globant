@@ -5,7 +5,6 @@ class Order extends React.Component {
     return (
       <div className="order">
         <h1>Order!</h1>
-        <p>Aquí van nuestras ordenes</p>
       </div>
     );
   }
